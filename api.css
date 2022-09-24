@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  border: 1px black solid;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  background: rgb(119, 187, 243);
+}
+.container {
+  width: 25%;
+}
+.card {
+  border-radius: 50px;
+  background: rgba(91, 243, 31, 0.7);
+  box-shadow: 5px 10px 8px 10px #888888;
+  padding: 3%;
+  text-align: center;
+}
+.card h4 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+img #icon {
+  width: 20%;
+}
+#weather {
+  text-transform: capitalize;
+}
