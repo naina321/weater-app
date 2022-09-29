@@ -10,7 +10,7 @@ body {
   background: rgb(119, 187, 243);
 }
 .container {
-  width: 25%;
+  width: 40%;
 }
 .card {
   border-radius: 50px;
@@ -24,9 +24,25 @@ body {
   font-weight: 400;
   margin: 1rem 0;
 }
+.card h6 {
+  font-size: 2rem;
+}
 img #icon {
   width: 20%;
 }
 #weather {
   text-transform: capitalize;
+}
+button.refresh {
+  display: block;
+  width: 16%;
+  margin: 2% auto;
+  color: hsl(0, 0%, 99%);
+  /* color: rgb(119, 187, 243); */
+  background: transparent;
+  border: 0;
+  font-size: 3rem;
+  height: 16%;
+  border-radius: 50%;
+  box-shadow: 10px 4px 10px rgb(54, 59, 55), 5px 5px 18px rgb(39, 46, 40);
 }
