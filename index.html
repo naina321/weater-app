@@ -35,7 +35,7 @@
   <!-- <script src="jquery-3.6.0.min.js"></script> -->
   <script>
     const link =
-      "https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=8b29556ae6d67eebac8656f1ea1d6f9a";
+      "https://api.openweathermap.org/data/2.5/weather?q=hapur&appid=8b29556ae6d67eebac8656f1ea1d6f9a";
     var request = new XMLHttpRequest();
     request.open("GET", link, true);
     request.onload = function () {
@@ -43,7 +43,11 @@
       console.log(obj);
       document.getElementById("weather").innerHTML = obj.weather[0].description;
       document.getElementById("location").innerHTML = obj.name;
-      document.getElementById("temp").innerHTML = obj.main.temp;
+      document.getElementById("temp").innerHTML = Math.round(
+        obj.main.temp - 273.5
+      );
+      document.getElementById("icon").src =
+        "https://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
     };
     // console.log(obj.main.temp);
     // document.getElementById("weather").innerHTML = obj.weather[0].description;
